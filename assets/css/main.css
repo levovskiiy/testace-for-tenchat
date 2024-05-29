@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .base-input {
+        @apply box-border
+        transition-colors
+        outline-none
+        py-2.5
+        rounded-[10px]
+        border-2 border-[theme(colors.primary.border)]
+        bg-[theme(colors.primary.lighter)]
+        focus-visible:border-[theme(colors.primary.hover)]
+        text-[theme(colors.primary.base)]
+        text-lg
+        placeholder-[theme(colors.text.placeholder)]
+    }
+
+    .link {
+        color:       theme(colors.primary.base);
+        font-weight: theme(fontWeight.bold);
+    }
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    font-size:   14px;
+    font-weight: 400;
+}
