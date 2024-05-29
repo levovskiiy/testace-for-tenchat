@@ -7,7 +7,12 @@
             <div class="w-[606px] h-[606px] m-auto relative">
                 <Circle class="w-full h-full z-1" />
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <img src="/assets/icons/signin.svg">
+                    <img
+                        width="586"
+                        height="369"
+                        alt="signin image"
+                        src="/assets/icons/signin.svg"
+                    >
                 </div>
                 <div class="mt-[50px] w-full text-center">
                     <h3 class="font-bold text-xl text-[#E0EAFF]">

@@ -7,7 +7,12 @@
             <div class="w-[606px] h-[606px] relative m-auto">
                 <Circle class="w-full h-full" />
                 <div class="absolute top-[84px] flex items-center justify-center">
-                    <img src="/assets/icons/signup.svg">
+                    <img
+                        width="603"
+                        height="389"
+                        alt="signup image"
+                        src="/assets/icons/signup.svg"
+                    >
                 </div>
                 <div class="mt-[50px] w-full text-center">
                     <h3 class="font-bold text-xl text-[#E0EAFF]">

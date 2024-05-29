@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     eslint: {
         config: {
             stylistic: {
-                indent: 2,
+                indent: 4,
                 commaDangle: 'only-multiline',
             },
         },

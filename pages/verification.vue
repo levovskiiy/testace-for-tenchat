@@ -2,7 +2,7 @@
 import { useSignupStore } from '~/store/signup.store'
 
 definePageMeta({
-    layout: 'signup',
+    layout: 'otp',
 })
 
 const signupStore = useSignupStore()
@@ -29,8 +29,6 @@ const codeEntered = ref(false)
             </div>
             <p class="flex-1">
                 Sent OTP on
-                {{ code }}
-                {{ codeEntered }}
                 <a
                     class="link"
                     :href="'mailto:' + signupStore.email"
@@ -43,6 +41,7 @@ const codeEntered = ref(false)
                 class="link"
             >
                 Change email
+
             </NuxtLink>
         </div>
         <VerificationCode
@@ -53,7 +52,12 @@ const codeEntered = ref(false)
             :disabled="!codeEntered"
             visual="primary"
         >
-            Submit
+            <NuxtLink
+                to="signin"
+                class="w-full"
+            >
+                Submit
+            </NuxtLink>
         </Button>
     </div>
 </template>

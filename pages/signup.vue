@@ -7,8 +7,6 @@ definePageMeta({
 
 const store = useSignupStore()
 
-const route = useRoute()
-
 const confirm = ref()
 onBeforeRouteLeave(async (to, from, next) => {
     if (to.name === 'signin') {
@@ -43,10 +41,10 @@ onBeforeRouteLeave(async (to, from, next) => {
             <div class="font-bold text-[40px] text-center leading-none">
                 Create your account
             </div>
-            <span>Unlock all Features!</span>
+            <span class="text-[#71717A]">Unlock all Features!</span>
         </div>
         <form
-            class="flex flex-col gap-2.5"
+            class="flex flex-col gap-2.5 px-3"
             @submit.prevent="store.handleSignup"
         >
             <TextField
